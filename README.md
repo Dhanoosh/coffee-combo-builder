@@ -12,7 +12,7 @@ Check out the live site: [https://coffee-combo-builder.vercel.app](https://coffe
 - **Drink Types:** Options include Americano, Cappuccino, Latte, Mocha, and special Espresso combos.
 - **Customization:** Build my combo by choosing options for size, milk, espresso, syrup, and extras.
 - **Surprise Me:** Randomly generate a coffee combo using my current temperature preference.
-- **Final View:** Get a simplified view of my final combo—with the drink’s icon displayed and an uplifting quote to brighten my day.
+- **Final View:** Get a simplified view of my final combo—with the drink’s icon displayed and an uplifting quote to brighten the day.
 
 ## Technologies Used
 
