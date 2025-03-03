@@ -1,0 +1,243 @@
+{
+    "globalOptions": {
+      "hotCommonOptions": {
+        "milkOptions": [
+          "Whole Milk",
+          "Soy Milk",
+          "Oat Milk",
+          "Coconut Milk",
+          "NonFat Milk",
+          "Half and Half"
+        ],
+        "espressoOptions": [
+          "Half Caf",
+          "Decaf",
+          "Two Expresso Shots"
+        ],
+        "syrupOptions": [
+          "Vanilla",
+          "Caramel",
+          "Hazelnut",
+          "Chocolate",
+          "Honey",
+          "Cinnamon",
+          "Classic",
+          "Lavender",
+          "Peppermint",
+          "Raspberry",
+          "Sugar Free Vanilla",
+          "Sugar Free Caramel",
+          "Sugar Free Hazelnut",
+          "toffee nut syrup",
+          "vanilla syrup",
+          "white chocloate sauce"
+        ],
+        "extras": [
+          "Add Cinnamon Powder",
+          "Extra Hot",
+          "Kids Temp",
+          "Half Sweet"
+        ]
+      },
+      "icedCommonOptions": {
+        "milkOptions": [
+          "Whole Milk",
+          "Soy Milk",
+          "Oat Milk",
+          "Coconut Milk",
+          "NonFat Milk",
+          "Half and Half"
+        ],
+        "espressoOptions": [
+          "Half Caf",
+          "Decaf",
+          "Two Expresso Shots"
+        ],
+        "syrupOptions": [
+          "Vanilla",
+          "Caramel",
+          "Hazelnut",
+          "Chocolate",
+          "Honey",
+          "Cinnamon",
+          "Classic",
+          "Lavender",
+          "Peppermint",
+          "Raspberry",
+          "Sugar Free Vanilla",
+          "Sugar Free Caramel",
+          "Sugar Free Hazelnut",
+          "toffee nut syrup",
+          "vanilla syrup",
+          "white chocloate sauce"
+        ],
+        "extras": [
+          "Add Cinnamon Powder",
+          "Extra Ice",
+          "Light Ice",
+          "Extra Light Ice",
+          "Half Sweet"
+        ]
+      },
+      "espressoCombos": {
+        "hot": [
+          {
+            "id": "vanilla-latte",
+            "name": "Vanilla Latte (Espresso Combo)",
+            "description": "Steamed milk with light foam, vanilla syrup and espresso.",
+            "components": {
+              "base": "Hot Espresso",
+              "milk": "Steamed Milk with Light Foam",
+              "syrup": "Vanilla",
+              "espresso": "Espresso"
+            }
+          },
+          {
+            "id": "caramel-macchiato-hot",
+            "name": "Caramel Macchiato (Espresso Combo)",
+            "description": "Steamed milk and vanilla syrup, topped with espresso and caramel drizzle.",
+            "components": {
+              "base": "Hot Espresso",
+              "milk": "Steamed Milk",
+              "syrup": [
+                "Vanilla",
+                "Caramel Drizzle"
+              ],
+              "espresso": "Espresso"
+            }
+          },
+          {
+            "id": "white-mocha-hot",
+            "name": "White Mocha (Espresso Combo)",
+            "description": "Steamed milk with espresso and white chocolate sauce.",
+            "components": {
+              "base": "Hot Espresso",
+              "milk": "Steamed Milk",
+              "syrup": "White Chocolate Sauce",
+              "espresso": "Espresso"
+            }
+          }
+        ],
+        "cold": [
+          {
+            "id": "iced-caramel-macchiato",
+            "name": "Iced Caramel Macchiato (Espresso Combo)",
+            "description": "Espresso with cold milk and vanilla syrup served over ice, topped with caramel drizzle.",
+            "components": {
+              "base": "Cold Espresso",
+              "milk": "Cold Milk",
+              "syrup": [
+                "Vanilla",
+                "Caramel Drizzle"
+              ],
+              "espresso": "Espresso"
+            }
+          },
+          {
+            "id": "iced-white-mocha",
+            "name": "Iced White Mocha (Espresso Combo)",
+            "description": "Espresso, cold milk and white chocolate sauce served over ice.",
+            "components": {
+              "base": "Cold Espresso",
+              "milk": "Cold Milk",
+              "syrup": "White Chocolate Sauce",
+              "espresso": "Espresso"
+            }
+          },
+          {
+            "id": "cold-brew",
+            "name": "Cold Brew (Espresso Combo)",
+            "description": "Fresh brewed iced coffee.",
+            "components": {
+              "base": "Cold Espresso",
+              "brewMethod": "Fresh Brewed Iced Coffee"
+            }
+          }
+        ]
+      }
+    },
+    "drinks": [
+      {
+        "id": "americano-hot",
+        "name": "Hot Americano",
+        "category": "Hot Coffee",
+        "description": "Espresso diluted with hot water for a milder flavor.",
+        "sizes": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "commonOptions": "hotCommonOptions"
+      },
+      {
+        "id": "cappuccino-hot",
+        "name": "Hot Cappuccino",
+        "category": "Hot Coffee",
+        "description": "Espresso with steamed milk and a thick layer of foam.",
+        "sizes": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "commonOptions": "hotCommonOptions"
+      },
+      {
+        "id": "latte-hot",
+        "name": "Hot Latte",
+        "category": "Hot Coffee",
+        "description": "Espresso with steamed milk and a light layer of foam.",
+        "sizes": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "commonOptions": "hotCommonOptions"
+      },
+      {
+        "id": "mocha-hot",
+        "name": "Hot Mocha",
+        "category": "Hot Coffee",
+        "description": "Espresso combined with steamed milk and chocolate sauce.",
+        "sizes": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "commonOptions": "hotCommonOptions"
+      },
+      {
+        "id": "americano-iced",
+        "name": "Iced Americano",
+        "category": "Iced Coffee",
+        "description": "Espresso diluted with cold water served over ice.",
+        "sizes": [
+          "Medium",
+          "Large"
+        ],
+        "commonOptions": "icedCommonOptions"
+      },
+      {
+        "id": "latte-iced",
+        "name": "Iced Latte",
+        "category": "Iced Coffee",
+        "description": "Espresso with cold milk served over ice.",
+        "sizes": [
+          "Medium",
+          "Large"
+        ],
+        "commonOptions": "icedCommonOptions"
+      },
+      {
+        "id": "mocha-iced",
+        "name": "Iced Mocha",
+        "category": "Iced Coffee",
+        "description": "Espresso with cold milk and chocolate sauce served over ice.",
+        "sizes": [
+          "Medium",
+          "Large"
+        ],
+        "commonOptions": "icedCommonOptions"
+      }
+    ]
+  }
+  

@@ -1,38 +1,193 @@
+/* App.css */
+
+body {
+  font-family: 'Comic Neue', cursive;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
   text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffeedd;
+  border: 3px dashed #d4a373;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Row container for Temperature & Surprise Me */
+.top-row {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff8f0;
+  border: 3px dashed #d4a373;
+  border-radius: 10px;
+}
+
+/* Section Containers */
+.drink-type-selector,
+.customization-panel,
+.coffee-combo-display {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff8f0;
+  border: 3px dashed #d4a373;
+  border-radius: 10px;
+}
+
+/* Hand-drawn button styles */
+.hand-drawn-button {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: 2px dashed #d4a373;
+  background-color: #f9d6b5;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.hand-drawn-button:hover {
+  transform: scale(1.05);
+}
+
+.hand-drawn-button.active {
+  background-color: #f0a500; /* More intense color */
+  color: #fff;
+}
+
+/* Drink Card styles */
+.drink-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.drink-card {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff9f0;
+  border: 3px dashed #d4a373;
+  border-radius: 10px;
+  transition: background-color 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drink-card:hover {
+  background-color: #fce8d5;
 }
+
+.drink-card.active {
+  background-color: #f0a500; /* Highlight the selected card */
+  color: #fff;
+}
+
+/* Coffee drink icon */
+.drink-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Customization Panel Options */
+.customization-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.customization-panel > div {
+  margin-bottom: 15px; /* extra space between sub categories */
+}
+
+.customization-option {
+  padding: 8px 12px;
+  border: 2px dashed #d4a373;
+  border-radius: 8px;
+  background-color: #f9d6b5;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.customization-option:hover {
+  transform: scale(1.05);
+}
+
+.customization-option.active {
+  background-color: #f0a500;
+  color: #fff;
+}
+
+/* Final view styling */
+.final-view {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff8f0;
+  border: 3px dashed #d4a373;
+  border-radius: 10px;
+}
+
+.final-view-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.final-view-details {
+  text-align: left;
+  flex: 1;
+}
+
+.final-drink-icon {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.final-view h2 {
+  margin-top: 0;
+}
+
+.quote {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Footer styling */
+.footer {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffeedd;
+  border-top: 1px solid #d4a373;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #f0a500;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
